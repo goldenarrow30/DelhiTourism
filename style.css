@@ -1,0 +1,269 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('front4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative; /* Ensure header positioning is relative */
+}
+
+/* Navigation (Nav) */
+nav {
+    width: 100%;
+    height: 15vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Make sure it stays on top */
+}
+
+/* Logo Styling */
+nav .logo {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Menu Container */
+.menu {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.main-nav li {
+    margin-left: 20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: rgb(149, 250, 26);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #4ac8f3;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* Special Color for First Menu Item */
+nav .menu a:first-child {
+    color: #00b894;
+}
+
+/* Main Content Area */
+main {
+    width: 100%;
+    height: auto; /* Adjust height for content */
+    padding: 80px 20px 20px; /* Adjust padding for nav overlap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* Section Styles */
+section h3 {
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+section h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Button Styles */
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+section a:hover{
+    text-transform: lowercase; 
+}
+
+section .btnone {
+    background: #fff;
+    color: #000;
+}
+
+section .btntwo {
+    background: cyan;
+    color: #000;
+}
+
+/* Responsive Styles for Tablets and Below */
+@media only screen and (max-width: 768px) {
+    /* Adjust header background */
+    header {
+        background-size: cover;
+        background-position: center center;
+    }
+
+    /* Navigation */
+    nav {
+        height: 10vh;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center;
+        padding: 0 15px;
+    }
+
+    /* Logo Adjustments */
+    nav .logo {
+        flex: 1;
+        font-size: 1.5rem; /* Increase font size for readability */
+        padding: 10px 0;
+    }
+
+    /* Menu Adjustments */
+    .menu {
+        flex: 1;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .main-nav {
+        flex-direction: column; /* Stack nav items vertically */
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .main-nav li {
+        margin: 10px 0;
+    }
+
+    /* Adjustments for Main Content */
+    main {
+        height: auto;
+        padding-top: 500px; /* Reduce padding */
+    }
+
+    section h1 {
+        font-size: 40px;
+    }
+
+    section h3 {
+        font-size: 28px;
+    }
+
+    section p {
+        font-size: 18px;
+    }
+
+    /* Buttons */
+    section a {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+}
+
+/* Responsive Styles for Mobile Phones */
+@media only screen and (max-width: 480px) {
+    /* Header and Navigation Adjustments */
+    header {
+        background-size: cover;
+        background-position: center center;
+    }
+
+    nav {
+        height: 8vh;
+        flex-direction: column; /* Stack vertically for small screens */
+        padding: 0 10px;
+    }
+
+    nav .logo {
+        font-size: 1.2rem; /* Adjust for smaller screens */
+    }
+
+    .menu {
+        flex: 1;
+        justify-content: center;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .main-nav li {
+        margin: 5px 0;
+    }
+
+    /* Main Content Adjustments */
+    main {
+        padding-top: 20px; /* Less padding for small screens */
+        height: auto;
+    }
+
+    section h1 {
+        font-size: 32px; /* Smaller heading for small screens */
+    }
+
+    section h3 {
+        font-size: 24px; /* Adjust font size */
+    }
+
+    section p {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    section a {
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+}

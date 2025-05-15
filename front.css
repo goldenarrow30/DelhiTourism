@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color:rgb(0, 0, 0);
+    
+    
+    color: #21f5ea;
+    font-family: 'Raleway', 'Arial',sans-serif;
+    font-weight: 300px;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    
+}
+video{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+}
+header{
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    background-attachment: fixed;
+}
+
+.logo{
+    height: 85px;
+    width: 12%;
+    float: left;
+    margin-top: 20px;
+}
+/**************************Headings*********************/
+h1{
+    font-size: 30px;
+    margin: 40px;
+    margin-top: 60px;
+    
+}
+h2{
+   font-size: 30px;
+   margin: 40px;
+   margin-top: 40px;
+}
+.visit{
+    text-align: center;
+    color: black;
+    
+}
+
+
+/******************************upper navigation*************/
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+    margin-right: 40px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color:rgb(149, 250, 26);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+     border-bottom: 2px solid transparent ;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #4ac8f3;
+}
+/**************************************Section-places****************/
+.section-places{
+    padding: 5px;
+}
+
+.places-showcase {
+    list-style: none;
+    width: 100%;
+    
+    
+}
+.places-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 4px;
+    
+}
+.places-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #043585;
+    text-align: center;
+    color: #2cf364;
+}
+.places-photo img{
+    opacity: 1;
+    width: 100%;
+    height: 60%;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+
+    
+    
+}
+.places-photo img:hover{
+    opacity: 2 ;
+    transform: scale(1.03);
+    
+}
+/****************************shopping places*********************************/
+.section-shopping{
+    padding: 5px;
+}
+
+.shopping-showcase {
+    list-style: none;
+    width: 100%;
+    
+    
+}
+.shopping-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 4px;
+    
+}
+.shopping-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+}
+.shopping-photo img{
+    opacity: 1;
+    width: 100%;
+    height: 35%;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+
+    
+    
+}
+.shopping-photo img:hover{
+    opacity: 2 ;
+    transform: scale(1.03);
+    
+}
+
+footer{
+    background-color: #333;
+    padding: 30px;
+    font-size: 80%;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+.social-links{
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0;
+    
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+}
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+}
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram{
+    transition: color 0.2s;
+}
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+.ion-social-twitter:hover{
+    color: #00aced;
+}
+
+.ion-social-googleplus:hover{
+    color: #dd4b39;
+}
+.ion-social-instagram:hover{
+    color: #517fa4;
+}
+
+
+footer p{
+    color:#888;
+    text-align: center;
+    margin-top: 20px;
+}
+#searchbar{  
+     padding:15px; 
+     border-radius: 10px; 
+   } 
+ 
+   input[type=text] { 
+      width: 30%; 
+      -webkit-transition: width 0.15s ease-in-out; 
+      transition: width 0.15s ease-in-out; 
+   } 
+ 
+   /* When the input field gets focus, 
+        change its width to 100% */
+   input[type=text]:focus { 
+     width: 70%; 
+   } 
+
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 50%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 10px; /* Add some space below the input */
+  margin-top: 15px; /* Add some space below the input */
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  /* background-color: rgb(24, 3, 44);  */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: rgb(37, 244, 248);  /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #090232; /* Add a hover effect to all links, except for headers */
+  color: rgb(208, 255, 0);
+}
+ 
